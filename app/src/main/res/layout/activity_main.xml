@@ -5,23 +5,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text01"
+    <View
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="48dp"
-        android:text="まだ" />
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="64dp"
+        android:text="00.000秒" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonStart"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:textSize="50dp"
         android:text="スタート"/>
 
-    <Button
+    <View
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonStop"
-        android:text="ストップ"/>
+        android:layout_weight="1"/>
 
 </LinearLayout>
